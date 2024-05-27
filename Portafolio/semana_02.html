@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 02</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral section">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="icon" name="arrow-redo-circle-outline"></ion-icon>
+                <span>Semana 02</span>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="portada" href="index.html">
+                        <ion-icon name="id-card"></ion-icon>
+                        <span>Menú Principal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#definicion">
+                        <ion-icon name="document-text"></ion-icon>
+                        <span>Definición</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#procedimiento">
+                        <ion-icon name="terminal"></ion-icon>
+                        <span>Procedimiento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resultado">
+                        <ion-icon name="document-attach"></ion-icon>
+                        <span>Resultado</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="code-slash"></ion-icon>
+                        <span>Ir al Código</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="definicion" id="definicion">
+            <h1>HTML Y CSS</h1>
+            <div class="inicio">
+                <div class="parte1">
+                    <p>En esta semana 2 hablaremos acerca de HTML Y CSS un resumen de todo lo visto en clases.<br><br>
+                    <h2><span>DEFINICIONES</span></h2><hr><br>
+    
+                    <span>OPEN WEB PLATFORM:</span> Colección de tecnologías y estándares, web abierta. (HTML5, CSS, SVG, ...)<br><br>
+                    Entre las caracteristicas tenemos: <br>
+                    <ul>
+                        <li>Evita ser controlado</li>
+                        <li>Aporta transparencia</li>
+                        <li>Capacidad de Integración</li>
+                        <li>Libertad de uso</li>
+                    </ul>
+                    <br>
+                    <span>HTML:</span> Es un lenguaje marcado, acrónimo en inglés de HyperText Markup Language, 
+                    hace referencia al lenguaje de marcado utilizado en la creación de páginas web. Este estándar 
+                    que sirve de referencia del software que interactúa con la elaboración de páginas web en sus
+                     diferentes versiones.<br>
+                    Hace uso de: <br>
+                    <ul>
+                        <li>(< >) etiquetas</li>
+                        <li>En el documento termina con .html</li>
+                        <li>Es parte de SGML</li>
+                    </ul>
+                    <br>
+                    <span>DOM (Document Objet Model):</span> Hace referencia a la estructura del documento<br>
+                    Algunas etiquetas son:
+                    <ul>
+                        <li>head (metadatos)</li>
+                        <li>style (Css en linea)</li>
+                        <li>nav (enlace de navegación)</li>
+                        <li>link (css externos)</li>
+                        <li>html ( raiz del doc )</li>
+                        <li> section ( secciones del documento)</li>
+                    </ul>
+                    <br>
+                    <span>XML :</span> Lenguaje marcado extensible, es un estandar que se utiliza para almacenar e 
+                    intercambiar información. Esta compuesto por:<br>
+                    <ul>
+                        <li>Prolog : nos da la versión y el encoding (metadatos)</li>
+                        <li>Body: esta el mensaje que se quiere dar ( contenido de datos simples)</li>
+                    </ul> <br>
+                    <span>Arbol DOM:</span> Interfaz para documentos HTML Y XML, arbol de elementos, permite leer y manipular
+                    el contenido, la estructura y estilos. <br>
+                    <ul>
+                        <li>Render TREE: Poder de modificar el objeto</li>
+                        <li>Arbol de Nodos: Objeto del DOM es convertir la estructura y contenido del doc HTML en un modelo
+                            de objeto que puede ser utilizado por varios programas.
+                        </li>
+                    </ul> <br>
+    
+              <span>BOM (Browser Object Model):</span> Ventana gráfica, lo manipula el Windows, se conecta al navegador
+                    con JS. Ejemplo: windows.document() . Se maneja por la etiqueta script.<br>
+                     <br>
+                     <span>Ciclo de vida de una pagina web:</span> Conocido como Critical Rendering Path, es la secuencia de
+                     datos que sigue el navegador para convertir HTML, CSS y JAVASCRIPT en pixeles en pantalla<br>
+                     <br> <br>
+                    <h3><span>CSS</span></h3> 
+                     Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado
+                     escrito en un lenguaje de marcado. Uso de los estilos: <br>
+                    <ul>
+                        <li>Podemos utilizarlo en la misma pagina en la etiqueta HEAD</li>
+                        <li>En archivos CSS mediante la etiqueta LINK</li>
+                    </ul> <br>
+                    Estilos CSS permite definir estilos reutilizables: <br>
+                    <ul>
+                        <li>Usar y reutilizar clases : class=" " </li>
+                        <li>Estilos no reutilizables mediante : id=" "</li>
+                    </ul> <br>
+                    <span>Selectores:</span> <br>Entre ellos tenemos.
+                    <ul>
+                        <li>Selectores de tipo</li>
+                        <li>Selector de clase</li>
+                        <li>Selector universal</li>
+                        <li>Selector de id</li>
+                        <li>Combinador de hijo etc. </li>
+                    </ul> <br>
+                    <h3><span>FLEXBOX</span></h3> 
+                    Estilo CSS utilizados para establecer el espacio de los elementos en fila o columnas de una forma dinamica 
+                    y sencilla. <br>
+                    <ul>
+                        <li>En linea: display: inline</li>
+                        <li>En bloque: display: block</li>
+                        <li>En tabla: display: table</li>
+                    </ul> <br>
+                    <h3><span>GRID LAYOUT</span></h3> 
+                    Es un estandar de las hojas de Estilo en cascada que nos permite maquetar contenido ajustandose a una rejilla
+                    en dos dimensiones totalmente considerables<br>
+                    <ul>
+                        <li>Se compone de lineas horizontales</li>
+                        <li>Espacio delimitado entre dos lineas se llama track</li>
+                    </ul>
+                    </p>
+                
+                </div>
+                <div class="img">
+                    <img src="img/grid-flex.png" alt="semana1_img">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="procedimento" id="procedimiento">
+            <h2><span>PROCEDIMIENTO</span></h2><hr><br>
+            <p>Para esta semana el procedimiento que se tuvo en cuenta fue el de aprendrer un poco mas sobre HTML Y CSS
+                .<br><br>
+                <span>Algunos de ellos son:</span>
+                <ul>
+                    <li>Hacer botones con colores primarios </li>
+                    <li>Introducir iconos mediante font awesome</li>
+                    <li>Un aro que gire</li>
+                    <li>Utilizar css para hacer pagina responsive</li>
+                </ul>
+            </p>
+            <br>
+            <p>Luego se realizo una practica en la cual nosotros debimos realizar uso de tan solo CSS para
+                realizar la practica.
+            </p>
+            <br>
+            <div class="img2">
+                <img src="img/semana_2.jpg" alt="semana1_img"> 
+            </div>
+        </div>
+        <div class="resultado" id="resultado">
+            <h2><span>RESULTADOS</span></h2><hr><br>
+            <p>Con esta segunda semana acerca de HTML Y Css, tendremos en nosotros conocimientos en estilo y formato de lo mencionado. <br><br>
+                        </p>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
