@@ -1,0 +1,14 @@
+<!-- Pregunta 1 -->
+header#header>div#menu>(li>a)*5
+
+<!-- Pregunta 2 -->
+nav>(header#header>nav#nav>(section#section>article#article)+aside#aside)+footer#footer
+
+<!-- Pregunta 3 -->
+table>thead>tr>th#id+th#nombres+th#apellidos+th#direccion+tbody>tr*20>(th{$}+td*3)
+
+<!-- Pregunta 4 -->
+table>tbody>tr*20>td{fila$@-}+td
+
+<!-- Pregunta 5 -->
+table.table>(thead>tr>th[scope=col]{0}+th[scope=col]{First}+th[scope=col]{Second}+th[scope=col]{Tree})+(tbody>(tr>th[scope=row]{$}+td{Mark}+td{Otto}+td{Jhonson})*3)

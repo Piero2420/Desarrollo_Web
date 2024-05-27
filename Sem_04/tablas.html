@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Estudiantes</title>
+</head>
+
+<body>
+    <table id="tablaEstudiantes" border="">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Apellidos</th>
+                <th>Nombres</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+    </table>
+
+    <script>
+        class Estudiante {
+            constructor(id, apellidos, nombres, direccion, telefono) {
+                this.id = id;
+                this.apellidos = apellidos;
+                this.nombres = nombres;
+                this.direccion = direccion;
+                this.telefono = telefono;
+            }
+        }
+
+        const estudiantes = [
+            new Estudiante(1, "Perez", "Juan", "Calle 123", "123456789"),
+            new Estudiante(2, "Gomez", "Maria", "Avenida 456", "987654321"),
+            new Estudiante(3, "Gutierrez", "Pedro", "Avenida 123", "987456321"),
+            new Estudiante(4, "Quispe", "Pablo", "Jirón 147", "258963147"),
+            new Estudiante(5, "Castro", "Junior", "Avenida 589", "147963025"),
+            new Estudiante(6, "Ayala", "Alan", "Jirón 369", "369852014"),
+            new Estudiante(7, "Smith", "Kenedy", "Avenida 520", "741852036"),
+            new Estudiante(8, "Gutarra", "Jorge", "Pasaje 987", "123657854"),
+            new Estudiante(9, "Alfaro", "Keyla", "Jirón 258", "321456987"),
+            new Estudiante(10, "Andrade", "Ingrid", "Avenida 656", "914703214")
+        ];
+
+        function mostrarEstudiantes() {
+            const tablaBody = document.querySelector('#tablaEstudiantes tbody');
+            tablaBody.innerHTML = '';
+
+            estudiantes.forEach(estudiante => {
+                const fila = document.createElement('tr');
+                fila.innerHTML = `
+                <td>${estudiante.id}</td>
+                <td>${estudiante.apellidos}</td>
+                <td>${estudiante.nombres}</td>
+                <td>${estudiante.direccion}</td>
+                <td>${estudiante.telefono}</td>
+            `;
+                tablaBody.appendChild(fila);
+            });
+        }
+
+        mostrarEstudiantes();
+    </script>
+
+</body>
+
+</html>

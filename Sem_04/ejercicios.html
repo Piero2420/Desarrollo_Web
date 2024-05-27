@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- !Ejercicio número 1 -->
+    <h3 class="titulo">Ejercicio 01: Manipular el HTML con un click</h3>
+    <p id="parrafo1">Texto</p>
+    <button class="modificarDom" onclick="modificandoDom()">Hacer Click</button>
+
+    <script>
+        function modificandoDom() {
+            let parrafo1 = document.getElementById('parrafo1');
+            parrafo1.innerHTML = "Cambiando el DOM " + new Date();
+        }
+    </script>
+
+    <!-- !Ejercicio número 2 -->
+    <h3 class="titulo">Ejercicio 02: Manipular el HTML con un AddEventListener</h3>
+    <form action="">
+        <label for="">Ingrese un texto: </label>
+        <input type="text" name="" id="idInput">
+        <p id="idparrafo">Texto2</p>
+    </form>
+
+    <script>
+        let txt = document.getElementById("idInput");
+        txt.addEventListener("keyup", cambiandoParrafo);
+        function cambiandoParrafo() {
+            let parrafo1 = document.getElementById("idparrafo");
+            parrafo1.innerHTML = txt.value;
+        }
+    </script>
+
+    <!-- !Ejercicio número 3 -->
+    <h3 class="titulo">Ejercicio 3: Manipular el HTML con un AddEventListener</h3>
+    <form action="">
+        <label for="">x: </label>
+        <input type="text" name="" id="num1"><br><br>
+        <label for="">y: </label>
+        <input type="text" name="" id="num2"><br><br>
+        <button type="button" onclick="calcularSuma()" class="">Sumar</button>
+        <p id="sumando">Resultado: </p>
+    </form>
+
+    <script>
+        function calcularSuma() {
+            let x, y, suma, text;
+            x = document.getElementById("num1").value;
+            y = document.getElementById("num2").value;
+            if (isNaN(x) || isNaN(y)) {
+                text = "Es necesario introducir 2 números válidos."
+            } else {
+                suma = parseFloat(x) + parseFloat(y);
+                text = suma;
+            }
+            document.getElementById("sumando").innerHTML = "Resultado: " + text;
+        }
+    </script>
+
+    <!-- !Ejercicio 4 -->
+    <h3>Ejercicio 4: Lista de Estudiantes</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Apellidos</th>
+                <th>Nombres</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody id="estudiantesTable"></tbody>
+    </table>
+    
+    <script>
+        var estudiantes = [
+            { id: 1, apellidos: "Perez", nombres: "Juan", direccion: "Calle 123", telefono: "1234567890" },
+            { id: 2, apellidos: "Gomez", nombres: "Maria", direccion: "Avenida 456", telefono: "9876543210" },
+            { id: 3, apellidos: "Gutierrez", nombres: "Pedro", direccion: "Avenida 123", telefono: "987456321"},
+            { id: 4, apellidos: "Quispe", nombres: "Pablo", direccion: "Jirón 147", telefono: "258963147"},
+            { id: 5, apellidos: "Castro", nombres: "Junior", direccion: "Avenida 589", telefono: "147963025"},
+            { id: 6, apellidos: "Ayala", nombres: "Alan", direccion: "Jirón 369", telefono: "369852014"},
+            { id: 7, apellidos: "Smith", nombres: "Kenedy", direccion: "Avenida 520", telefono: "741852036"},
+            { id: 8, apellidos: "Gutarra", nombres: "Jorge", direccion: "Pasaje 987", telefono: "12365785"},
+            { id: 9, apellidos: "Alfaro", nombres: "Keyla", direccion: "Jirón 258", telefono: "321456987"},
+            { id: 10, apellidos: "Andrade", nombres: "Ingrid", direccion: "Avenida 656", telefono: "914703214"},
+        ];
+
+        var tableBody = document.getElementById('estudiantesTable');
+
+        estudiantes.forEach(function(estudiante) {
+            var row = document.createElement('tr');
+            row.innerHTML = `<td>${estudiante.id}</td>
+                             <td>${estudiante.apellidos}</td>
+                             <td>${estudiante.nombres}</td>
+                             <td>${estudiante.direccion}</td>
+                             <td>${estudiante.telefono}</td>`;
+            tableBody.appendChild(row);
+        });
+    </script>
+
+    <!-- !Ejercicio 5 -->
+    <h3 class="titulo">Ejercicio 5: Aplicación Orientada a Objetos para mostrar una tabla con datos del estudiante</h3>
+    <table border="">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Apellidos</th>
+                <th>Nombres</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody id="estudiantesTableBody"></tbody>
+    </table>
+
+    <script>
+        class Estudiante {
+            constructor(id, apellidos, nombres, direccion, telefono) {
+                this.id = id;
+                this.apellidos = apellidos;
+                this.nombres = nombres;
+                this.direccion = direccion;
+                this.telefono = telefono;
+            }
+        }
+
+        var estudiantes = [
+            new Estudiante(1, "Perez", "Juan", "Calle 123", "123456789"),
+            new Estudiante(2, "Gomez", "Maria", "Avenida 456", "987654321"),
+            new Estudiante(3, "Gutierrez", "Pedro", "Avenida 123", "987456321"),
+            new Estudiante(4, "Quispe", "Pablo", "Jirón 147", "258963147"),
+            new Estudiante(5, "Castro", "Junior", "Avenida 589", "147963025"),
+            new Estudiante(6, "Ayala", "Alan", "Jirón 369", "369852014"),
+            new Estudiante(7, "Smith", "Kenedy", "Avenida 520", "741852036"),
+            new Estudiante(8, "Gutarra", "Jorge", "Pasaje 987", "12365785"),
+            new Estudiante(9, "Alfaro", "Keyla", "Jirón 258", "321456987"),
+            new Estudiante(10, "Andrade", "Ingrid", "Avenida 656", "914703214")
+        ];
+
+        var tableBody = document.getElementById('estudiantesTableBody');
+
+        estudiantes.forEach(function (estudiante) {
+            var row = document.createElement('tr');
+            row.innerHTML = `<td>${estudiante.id}</td>
+                             <td>${estudiante.apellidos}</td>
+                             <td>${estudiante.nombres}</td>
+                             <td>${estudiante.direccion}</td>
+                             <td>${estudiante.telefono}</td>`;
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+</body>
+
+</html>

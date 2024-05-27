@@ -1,0 +1,160 @@
+.navbar-nav{
+    margin-left: 60px;
+}
+
+.nav-link {
+    line-height: 30px;
+    margin-right: 15px; /* espaciar entre li*/
+    
+}
+
+
+/*.cajita{
+    position: relative;
+
+}*/
+/*de la imagen*/
+.d-block{
+    height: 500px;
+    
+}
+
+.texto{
+    position: absolute;/*hace ubicar arriba encima de la foto*/
+    top: 240px;
+    left: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 340px;
+}
+
+.lupa{
+    margin-left: 90px;
+}
+/*para girar tiangulito de las opciones*/
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    transition: transform 0.3s;
+  }
+  
+  .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
+/*seccion1*/
+  .seccion1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .card{
+    margin-top: 20px;
+  }
+  .card-body i{
+    font-size: 30px;
+  }
+
+  /*seccion2*/
+  .text-bg-dark img{
+    height: 160px;
+  }
+  .card-img-overlay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(77, 75, 75, 0.5);
+  }
+  .what{
+    font-size: 42px;
+    font-weight: bold;
+  }
+  .info{
+    font-size: 18px;
+  }
+  /*seccion3*/
+
+  /*seccion4*/
+  .seccion4{
+    display: flex;
+    justify-content: center;
+  }
+  .imgg img{
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .seccion4 form{
+    width: 500px;
+    margin-top: 10px;
+    
+  }
+/*seccion 5*/
+.seccion5{
+  display: flex;
+  justify-content: space-between;
+}
+.seccion5 .card{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 820px) {
+    .carousel-item img{
+      height: 400px;
+    }
+    .texto{
+      top: 170px;
+      left: 80px;
+      /*flex-direction: column;*/
+      width: 300px;
+    }
+    .texto h2{
+      font-size: 25px;
+    }
+    .texto p{
+      font-size: 15px;
+    }
+    /*seccion1*/
+    .seccion1 .card{
+      width: 15px;
+    }
+    .card-body i{
+      font-size: 20px;
+    }
+    .card-body h4{
+      font-size: 15px;
+    }
+    .card-body p{
+      font-size: 10px;
+    }
+    /*2*/
+    .card-img-overlay h5{
+      font-size: 20px;
+    }
+    .card-img-overlay p{
+      font-size: 12px;
+    }
+    .card-img-overlay .btn{
+      font-size: 10px;
+    }
+    /*seccion4*/
+    .imgg img{
+      height: 300px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .seccion4 form{
+      display: none;
+      /*margin-top: 20px;*/
+    }
+  }

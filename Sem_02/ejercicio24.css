@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+header,
+footer {
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #383838;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    position: relative;
+}
+
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d8d8d8;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem #52525233;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    color: #6C2284;
+}
+
+.navbar a:hover {
+    color: #15abc9;
+}
+
+div input {
+    display: none;
+}
+
+div label {
+    font-size: 2.3rem;
+    color: #6C2284;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5.45rem;
+}
+
+span {
+    background-color: #e83d3d;
+    box-shadow: .2rem .2rem .5rem;
+}
+
+article {
+    background-color: #b2e83d;
+    box-shadow: 0 .2rem .5rem;
+}
+
+aside {
+    background-color: #3da1e8;
+    box-shadow: -.2rem .2rem .5rem;
+}
+
+.campo {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 2rem;
+    }
+
+    div label {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        border-top: solid .1rem #0000004d;
+        box-shadow: 0 .5rem 1rem #0000001a;
+        transform-origin: top;
+        /* transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; */
+        transform: scaleY(0);
+        opacity: 0;
+        transform: .2s linear;
+    }
+
+    div input:checked~.navbar {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    div input:checked~label::before {
+        content: '\f00d';
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.4rem 0;
+        font-size: 1.3rem;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    span {
+        background-color: #e83d3d;
+        box-shadow: 0 .2rem .5rem;
+    }
+
+    article {
+        background-color: #b2e83d;
+        box-shadow: 0 0 .8rem;
+    }
+
+    aside {
+        background-color: #3da1e8;
+        box-shadow: 0 -.2rem .5rem;
+    }
+}
