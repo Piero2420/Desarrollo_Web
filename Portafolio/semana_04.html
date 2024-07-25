@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 04</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral section">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="icon" name="arrow-redo-circle-outline"></ion-icon>
+                <span>Semana 04</span>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#definicion">
+                        <ion-icon name="document-text"></ion-icon>
+                        <span>Definición</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#procedimiento">
+                        <ion-icon name="terminal"></ion-icon>
+                        <span>Procedimiento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resultado">
+                        <ion-icon name="document-attach"></ion-icon>
+                        <span>Resultado</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Piero2420/Desarrollo_Web/tree/main/Sem_01" target="_blank">
+                        <ion-icon name="code-slash"></ion-icon>
+                        <span>Ir al Código</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="portada" href="index.html">
+                        <ion-icon name="id-card"></ion-icon>
+                        <span>Menú Principal</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="definicion" id="definicion">
+            <h1>JAVASCRIPT</h1>
+            <div class="inicio">
+                <div class="parte1">
+                    <p>En esta semana 4 hablaremos acerca de JAVASCRIPT un resumen de todo lo visto<br>
+                    <h2><span>DEFINICIONES</span></h2>
+                    <hr><br>
+
+                    <span>JS: </span> Es un lenguaje script dinamico, multiparadigma, basado en prototipos,es
+                    el lenguaje mas importante, no solo para la web <br><br>
+                    Nos permite crear: <br>
+                    <ul>
+                        <li>Aplicaciones de servidor</li>
+                        <li>Aplicaciones moviles</li>
+                        <li>Aplicaciones de consola</li>
+                        <li>Aplicaciones web</li>
+                    </ul>
+                    <br>
+                    Motores de JavaScript: <br>
+                    <ul>
+                        <li>Mozilla</li>
+                        <li>V8 de Google</li>
+                        <li>Carakan</li>
+                    </ul>
+                    <br>
+                    <span>Node JS:</span> Es un entorno para JavaScript construido con el motor de Javascript V8 <br>
+                    Las instrucciones de Javascript son llamadas sentencias y estan separadas por un punto y coma.
+                    <br><br>
+                    Donde podemos incluir Javascript <br>
+                    <ul>
+                        <li>Incluir en el Documento HTML</li>
+                        <li>Describirlo en archivo externo</li>
+                        <li>Javascript tag</li>
+                    </ul>
+                    <br>
+                    Entre las variables tenemos varias formas de declararlo:
+                    <ul>
+                        <li>var</li>
+                        <li>let</li>
+                        <li>const</li>
+                    </ul> <br>
+                    Tipo de datos:
+                    <ul>
+                        <li>Boolean</li>
+                        <li>String</li>
+                        <li>Null</li>
+                        <li>Symbol</li>
+                    </ul> <br>
+                    <span>Variable Hosting:</span> Hacer referencia a una variable declara mas tarde, ain obtener una
+                    excepción. <br>
+                    <span>Estructura de control(Condicionales):</span> <br>
+                    <ul>
+                        <li>Condicional IF</li>
+                        <li>Condicional switch pag 10</li>
+                    </ul> <br>
+                    <span>Estructuras repetitivas:</span> Sirven para programar bucles <br>
+                    <ul>
+                        <li>Bucle for</li>
+                        <li>Bucle while</li>
+                        <li>El Bucle do while, etc</li>
+                    </ul>
+                    <h3><span>Funciones y Procedimientos</span></h3>
+                    Una función en JavaScript es un bloque de codigo diseñado para realizar una tarea en particular
+                    cuando
+                    la invocan. <br>
+                    <ul>
+                        <li>Funcion declaration: Se define con la palabra reservada function</li>
+                        <li>Invocacion de funciones: nombre de la funcion + () dentro lista de argumentos</li>
+                        <li>Funciones anonimas: Funciones que no tendran un nombre pero, deben ser almacenadas en
+                            variables</li>
+                        <li>Funcion object: Definidas con un constructor de funciones de JS</li>
+                        <li>Funciones flecha: Tratan de simplificar codigo</li>
+                    </ul> <br>
+                    <h3><span>Cadena String</span></h3>
+                    Es un cojunto de elementos de valores enteros de 16-BITS. Son texto del tipo String
+                    <ul>
+                        <li>Literales de cadena: Utilizando "" o '' </li>
+                        <li>Objetos de cadena: Es un envoltorio al rededor de los datos.</li>
+                    </ul> <br>
+                    <span>Metodos string: </span>Entre los mas comunes podemos mencionar
+                    <ul>
+                        <li>charArt : Devuelve el caracter en posicion especificada</li>
+                        <li>split: Dvide un objeto string en un array de strings</li>
+                        <li>Normalice: Normalizado en unicode</li>
+                        <li>trim: Elimina los espacios en blanco del principio al final</li>
+                    </ul> <br>
+                    <h3><span>Arrays, Number y modulos JS</span></h3>
+                    <span>Number: </span> Es la clase del tipo primitivo number. Podemos representar numeros enteros,
+                    decimales, etc<br>
+                    <ul>
+                        <li>Declarar number: var numero1</li>
+                        <li>Funciones number: number.toFixed(x) redondea number con x decimales</li>
+                        <li>Modulo math: Nos permite realizar operaciones matematicas Ejm: Math.random y Math.pi</li>
+                    </ul><br>
+                    Nosotros tambien podemos hacer uso de <span>herencia de objetos, desestructuración de objetos</span>
+                    </p>
+
+                </div>
+                <div class="img">
+                    <img src="https://miro.medium.com/v2/resize:fit:1110/1*3hpJ4C4I9BNnC2L1F7490Q.png" alt="semana1_img">
+
+                </div>
+            </div>
+        </div>
+        <div class="procedimento" id="procedimiento">
+            <h2><span>PROCEDIMIENTO</span></h2>
+            <hr><br>
+            <p>Para esta semana el procedimiento que se tuvo en cuenta fue el de aprendren un poco mas sobre JAVASCRIPT
+                las
+                bondades que nos ofrece para nosotros implementar objetos, arrays, etc.<br><br>
+                <span>Algunos de las actividades a realizar son:</span>
+            <ul>
+                <li>¿Qué es JS? </li>
+                <li>Como se define un variable </li>
+                <li>Como darle funcion a un boton</li>
+                <li>Sumas mediante un boton</li>
+                <li>Tablas con clases </li>
+            </ul>
+            </p>
+            <p>Luego se realizo una practica en la cual nosotros debimos realizar uso de JS para realizar lo anterior
+                mencionado.
+            </p>
+            <br>
+            <div class="img2">
+                <img src="img/herenciaJS.png" alt="semana1_img">
+            </div>
+        </div>
+        <div class="resultado" id="resultado">
+            <h2><span>RESULTADOS</span></h2>
+            <hr><br>
+            <p>Con esta semana 4 nosotros debemos tener conocimiento de como funciona JS en el desarollo de paginas.
+                Como nostros podemos dar funciones a botones, realizar operaciones involucrando variables e ingreso
+                de datos asi como el uso de objetos y clases.<br><br>
+            <ul>
+                <li>Tendremos conocimiento sobre las funciones en JS</li>
+                <li>Como declaramos variables</li>
+                <li>Tendremos conocimiento de que son los argumentos</li>
+                <li>Funciones matematicas </li>
+                <li>Aplicar clases a nuestras estructuras</li>
+                <li>Ingresar datos a una tabla mediante funciones y clases</li>
+            </ul>
+            </p>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

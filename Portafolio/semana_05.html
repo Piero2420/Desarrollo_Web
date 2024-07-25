@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 05</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral section">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="icon" name="arrow-redo-circle-outline"></ion-icon>
+                <span>Semana 05</span>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#definicion">
+                        <ion-icon name="document-text"></ion-icon>
+                        <span>Definición</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#procedimiento">
+                        <ion-icon name="terminal"></ion-icon>
+                        <span>Procedimiento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resultado">
+                        <ion-icon name="document-attach"></ion-icon>
+                        <span>Resultado</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Piero2420/Desarrollo_Web/tree/main/Sem_01" target="_blank">
+                        <ion-icon name="code-slash"></ion-icon>
+                        <span>Ir al Código</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="portada" href="index.html">
+                        <ion-icon name="id-card"></ion-icon>
+                        <span>Menú Principal</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="definicion" id="definicion">
+            <h1>INTRODUCCION AL DESARROLLO CON REACT</h1>
+            <div class="inicio">
+                <div class="parte1">
+                    <p>En esta semana 5 hablaremos acerca del desarrollo con React un resumen de todo lo visto<br>
+                    <h2><span>DEFINICIONES</span></h2><hr><br>
+    
+                    <span>¿Qué es REACT?</span> Framework frontend <br><br>
+                    Es una biblioteca de JS para crear interfaces de ususario <br>
+                    Se utiliza para crear SPA aplicaciones de una sola página <br>
+                    REACT nos permite crear componentes de interfaz reutilizables 
+                    <br>
+                    
+                    <br>
+                    <span>¿Cómo funciona REACT?:</span>  Crea un DOM virtual en la memoria <br>
+                    <ul>
+                        <li>Primero modifica el DOM virtual antes de hacer cambios en DOM navegador</li>
+                        <li>React solo cambia lo que necesita ser cambiado</li>
+                        <li>React descrubre lo que fue cambiado</li>
+                    </ul>
+                    <br>
+                    Si quisieraa utilizar REACT recuerda que debes tener instalado npm y node.js instalado  
+                    <ul>
+                        <li>Para usar REACT necesitas dos librerias: REACT Y REACTDOM</li>
+                        <li>Podemos utilizar REACT  directamente en HTML incluyendo scripts y etiquetas definidas</li>
+                    </ul> <br>
+                    <h3><span>INSTALACION DE NODE JS</span></h3> 
+                    Para realizar la instalacion en tu equipo lo unico que necesitas son estos pasos <br>
+                    <ol>
+                        <li>Ingresar a esta url :</li> <a href="https://nodejs.org/en/">NODE JS</a>
+                        <li>Descargar el archivo version LTS</li>
+                        <li>Ejecutar como administrador</li>
+                        <li>Dar en NEXT en todo el proceso de instalación</li>
+                        <li>Habra una ventana que te muestre un cuadro para activar el check desactiva esa opción</li>
+                        <li>Finalmente terminar la instalación</li>
+                    </ol> <br>
+                    <h3><span>DOCUMENTACION REACT</span></h3> 
+                    Podemos encontrarlo en el siguiente URL : <a href="https://es.react.dev/">REACT DV</a>
+                    <br> <br>
+                    <h3><span>HERRAMIENTAS DE REACT</span></h3> 
+                    Para trabajar con REACT JS es necesario conocer con que herramientas necesitamos trabajar <br>
+                    <span>Ecosistema de desarrollo con REACT:</span> <br>
+                    <ul>
+                        <li>Babel JS: Transforma nuestro codigo JS a código JS para nuestro navegador</li>
+                        <li>ESLint: Herramienta que revisa y observa tu codigo errores que pueden afectar.</li>
+                        <li>Sass: Metalenguaje de hojas de estilo , lenguaje script traducido al css</li>
+                    </ul> <br>
+    
+                    <h3><span>FONT AWESOME</span></h3>
+                    Utilizado para sustituir imagenes por iconos nos es necesario el uso de JAVASCRIPT ello ya lo Utilizamos
+                    en anteriores semanas. <br>
+                    Otros similares tenemos a FAVICON
+                    <br> <br>
+                    <h3><span>HERRAMIENTAS DE INSTALACION REACT</span></h3>
+                    Para evitar los problemas con la isntalacion manual y poder tener errores se tiene lo siguiente:
+                    <ul>
+                        <li>Create-react-app</li>
+                        <li>Vite</li>
+                        <li>Next JS</li>
+                    </ul> <br>
+                    Para crear documentos con las tres herramientas mencionadas realicemos lo siguiente: <br>
+                    <span>CREATE REACT APP</span> <br>
+                    Ingresa en el cmd : npx create-react-app nombreProy <br>
+                    Ahora ingresamos al proyecto con: cd nombreProy <br>
+                    Finalmente ejecutamos: npm start <br><br>
+                    <span>VITE</span> <br>
+                    Ingresa en el cmd : npm create vite nombreProy <br>
+                    Ahora ingresamos al proyecto con: cd nombreProy <br>
+                    Finalmente ejecutamos: npm install y luego : npm run dev <br><br>
+                    </p>
+                    <span>NEXT.JS</span> <br>
+                    Ingresa en el cmd : npx create-next-app nombreProy <br>
+                    Ahora ingresamos al proyecto con: cd nombreProy <br>
+                    Finalmente ejecutamos: npm install y luego : npm run dev <br><br>
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="https://carlosazaustre.es/images/react-vite/vite-react-app.png" alt="semana1_img">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="procedimento" id="procedimiento">
+            <h2><span>PROCEDIMIENTO</span></h2><hr><br>
+            <p>Para esta semana el procedimiento que se tuvo en cuenta fue el de aprendren sobre REACT las
+                bondades que nos ofrece en el desarrollo de paginas web y aplicaciones.<br><br>
+                <span>Algunos de lo que debemos revisar y aprender es lo siguiente:</span>
+                <ul>
+                    <li>¿Qué es REACT? </li>
+                    <li>Como funciona REACT </li>
+                    <li>Que herramientas necesito para utilizar REACT </li>
+                    <li>Como es estructura REACT</li>
+                    <li>Como son los distintos proyectos con REACT</li>
+                </ul>
+            </p>
+            <div class="img2">
+                <img src="img/react.jpg" alt="semana1_img"> 
+            </div>
+            <br>
+            
+        </div>
+        <div class="resultado" id="resultado">
+            <h2><span>RESULTADOS</span></h2><hr><br>
+            <p>Con esta semana 5 nosotros tenemos nocion de que es un FRAMEWORK REACT y que podemos realizar con el. <br><br>
+                <ul>
+                    <li>Tendremos conocimiento sobre que es REACT yrelacion con JS</li>
+                    <li>Sabremos acerca de lo que se necesita para poder utilizar REACT (NODE.JS)</li>
+                    <li>Sabremos como realizar la instalcion de la herramienta NODE.JS</li>
+                    <li>Conoceremos un poco mas sobre la fuente de iconos como FONT AWESOME</li>
+                    <li>Podremos crear proyectos con VITE , CREATE REACT APP y NEXT.JS</li>
+                    <li>Conoceremos la estructura de cada proyecto.</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

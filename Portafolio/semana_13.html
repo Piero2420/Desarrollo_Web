@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 13</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral section">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="icon" name="arrow-redo-circle-outline"></ion-icon>
+                <span>Semana 13</span>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#definicion">
+                        <ion-icon name="document-text"></ion-icon>
+                        <span>Definición</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#procedimiento">
+                        <ion-icon name="terminal"></ion-icon>
+                        <span>Procedimiento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resultado">
+                        <ion-icon name="document-attach"></ion-icon>
+                        <span>Resultado</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Piero2420/Desarrollo_Web/tree/main/Sem_01" target="_blank">
+                        <ion-icon name="code-slash"></ion-icon>
+                        <span>Ir al Código</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="portada" href="index.html">
+                        <ion-icon name="id-card"></ion-icon>
+                        <span>Menú Principal</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="definicion" id="definicion">
+            <h1>TOMCAT Y JSP</h1>
+            <div class="inicio">
+                <div class="parte1">
+                    <p>En esta semana 13 hablaremos acerca de TOMCAT y JSP<br>
+                    <h2><span>DEFINICIONES</span></h2>
+                    <hr><br>
+
+                    <span>Cliente en JSP:</span> <br>
+                    En JSP, el término "cliente" se refiere al navegador web o aplicación que solicita una página
+                    web al servidor Tomcat. El cliente envía una solicitud HTTP al servidor Tomcat que contiene
+                    la URL de la página JSP solicitada. .<br><br>
+
+                    <span>Apache Tomcat:</span> Es un servidor web y contenedor servlet de código
+                    abierto desarrollado por la Apache Software Foundation. Tomcat actúa como un servidor web
+                    que sirve páginas web estáticas y dinámicas. <br>
+
+
+                    <span>Metodos HTTP:</span>GET, POST, PUT y DELETE se utilizan para determinar la forma en que
+                    se procesa una solicitud HTTP enviada desde el cliente al servidor. <br>
+                    <br>
+                    <ul>
+                        <li>GET: Este método se utiliza para solicitar datos del servidor. En JSP, cuando se
+                            recibe una solicitud GET, los parámetros de la solicitud pueden ser accesibles
+                            a través del objeto</li>
+                        <li>POST: Este método se utiliza para enviar datos al servidor, generalmente a través de
+                            un formulario HTML en una página JSP. En este caso, los datos enviados por el cliente
+                            pueden ser accesibles a través del objeto</li>
+                        <li>PUT y DELETE: Estos métodos HTTP son menos comunes en formularios HTML estándar,
+                            pero pueden ser utilizados en aplicaciones web más avanzadas o cuando se trabaja
+                            con APIs RESTful.</li>
+                    </ul>
+
+                </div>
+                <div class="img">
+                    <img src="/img/tomcat.png" alt="Tomcat">
+
+                </div>
+            </div>
+        </div>
+        <div class="procedimento" id="procedimiento">
+            <h2><span>PROCEDIMIENTO</span></h2>
+            <hr><br>
+            <p>Para esta semana el procedimiento que se tuvo en cuenta fue aplicar conocimientos en JSP como:<br><br>
+            <ul>
+                <li>Realizar conexión a base de datos</li>
+                <li>Usar metodo GET, POST, PUT, DELETE</li>
+            </ul>
+            </p>
+            <div class="img2">
+                <img src="/img/semana13.jpg" alt="ejercicio13">
+            </div>
+            <br>
+        </div>
+        <div class="resultado" id="resultado">
+            <h2><span>RESULTADOS</span></h2>
+            <hr><br>
+            <p>Con la practica y la guia del ingeniero pudimos obtener los siguientes resultados: <br><br>
+            <ul>
+                <li>Realizar pagina web haciendo uso de JSP y HTML</li>
+                <li>Usar metodos GET y POST , ademas de diferenciarlos</li>
+                <li>Hacer uso de formularios donde se envien el metodo de GET y POST</li>
+
+            </ul>
+            </p>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 14</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral section">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="icon" name="arrow-redo-circle-outline"></ion-icon>
+                <span>Semana 14</span>
+            </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#definicion">
+                        <ion-icon name="document-text"></ion-icon>
+                        <span>Definición</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#procedimiento">
+                        <ion-icon name="terminal"></ion-icon>
+                        <span>Procedimiento</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resultado">
+                        <ion-icon name="document-attach"></ion-icon>
+                        <span>Resultado</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Piero2420/Desarrollo_Web/tree/main/Sem_14" target="_blank">
+                        <ion-icon name="code-slash"></ion-icon>
+                        <span>Ir al Código</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="portada" href="index.html">
+                        <ion-icon name="id-card"></ion-icon>
+                        <span>Menú Principal</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="definicion" id="definicion">
+            <h1>JAKARTA Y Servlets</h1>
+            <div class="inicio">
+                <div class="parte1">
+                    <p>En esta semana 14 hablaremos acerca de JAKARTA y servelets<br>
+                    <h2><span>DEFINICIONES</span></h2>
+                    <hr><br>
+
+                    <span>Modelo-Vista-Controlador:</span> El patrón MVC es un patrón de diseño arquitectónico
+                    que separa una aplicación en tres componentes principales:<br><br>
+                    <ul>
+                        <li>Modelo (Model): Representa los datos y la lógica de negocio de la aplicación.
+                            Idealmente, el modelo no debería depender de la vista o del controlador.</li>
+                        <li>Vista (View): Es responsable de la presentación de los datos al usuario y de la
+                            interacción con éste. En una aplicación web, la vista puede ser una página JSP,
+                            HTML o cualquier otro tipo de interfaz de usuario.</li>
+                        <li>Controlador (Controller): Actúa como intermediario entre el modelo y la vista,
+                            maneja las solicitudes del usuario y actualiza el modelo según sea necesario.
+                            En una aplicación web, el controlador puede ser un servlet Java que procesa las
+                            solicitudes HTTP y luego determina qué vista mostrar al usuario.</li>
+                    </ul>
+                    <br>
+
+                    </p>
+
+                </div>
+                <div class="img">
+                    <img src="/img/jakarta.jpg" alt="jakarta">
+
+                </div>
+            </div>
+        </div>
+        <div class="procedimento" id="procedimiento">
+            <h2><span>PROCEDIMIENTO</span></h2>
+            <hr><br>
+            <p>Para esta semana el procedimiento que se tuvo en cuenta fue conoce un poco mas de servelets y
+                rutas partiendo de conceptos como:<br><br>
+            <ul>
+                <li>Que herramienta utilizar para el codigo jsp</li>
+                <li>Seguir ejemplos donde podremos correr la aplicacion con TOMCAT</li>
+            </ul>
+            </p>
+            <div class="img2">
+                <img src="/img/semana14.jpg" alt="ejercicio14">
+            </div>
+            <br>
+        </div>
+        <div class="resultado" id="resultado">
+            <h2><span>RESULTADOS</span></h2>
+            <hr><br>
+            <p>Con la practica y la guia del ingeniero pudimos obtener los siguientes resultados: <br><br>
+            <ul>
+                <li>Creacion de proyectos con MAVEN</li>
+                <li>Conexión con el servidor TOMCAT</li>
+            </ul>
+            </p>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
