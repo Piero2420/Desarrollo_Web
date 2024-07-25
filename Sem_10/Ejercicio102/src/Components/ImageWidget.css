@@ -1,0 +1,17 @@
+.image-widget {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .image-widget img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
